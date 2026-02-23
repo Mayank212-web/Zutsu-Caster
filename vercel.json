@@ -1,5 +1,14 @@
 {
+  "builds": [
+    {
+      "src": "main_web.py",
+      "use": "@vercel/python"
+    }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/main_web.py" }
+    {
+      "source": "/(.*)",
+      "destination": "main_web.py"
+    }
   ]
 }
